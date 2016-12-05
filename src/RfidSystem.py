@@ -132,7 +132,9 @@ class RfidSystem(object):
 		update_query = update_query + " WHERE timestamp=" + str(timestamp)
 
 		# #TEST CODE
-		# print update_query
+		print self.sql_db
+		print self.logTable
+		print update_query
 
 		#Cant use the same db and cursor objects as getRowFromDB
 		#Probably because its always running in a separate thread
